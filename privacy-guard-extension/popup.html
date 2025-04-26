@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Privacy Guard</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+        .status {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #4CAF50;
+            margin-right: 10px;
+        }
+        .settings {
+            margin-top: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="status">
+        <div class="status-indicator"></div>
+        <span>Privacy Guard is active</span>
+    </div>
+    <div class="settings">
+        <label>
+            <input type="checkbox" id="emails" checked>
+            Blur email addresses
+        </label>
+        <label>
+            <input type="checkbox" id="phones" checked>
+            Blur phone numbers
+        </label>
+        <label>
+            <input type="checkbox" id="credit-cards" checked>
+            Blur credit card numbers
+        </label>
+        <label>
+            <input type="checkbox" id="ssn" checked>
+            Blur SSN
+        </label>
+    </div>
+</body>
+</html>
